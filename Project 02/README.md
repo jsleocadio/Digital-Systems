@@ -13,7 +13,7 @@ O sistema é composto por três sinais analógicos como entrada para os converso
 AD, quatro sinais de entrada digital, quatro sinais de saídas digitais e um de saída analógica
 (PWM).
 
-![Configuração do Projeto!](/images/Imagem%2001.png)
+![Configuração do Projeto!](https://github.com/jsleocadio/Digital-Systems/blob/main/Project%2002/images/Imagem%2001.png)
 
 **Materiais utilizados:**
 
@@ -79,15 +79,15 @@ funcionando na plataforma do Tinkercad.**
 
 A ignição é controlada por três resistores de 10 k $\Omega$, ou seja, um divisor de tensão. Na protoboard, realizei a configuração da seguinte forma: 
 
-![Configuração Divisor de Tensão!](/images/Imagem%2002.png)
+![Configuração Divisor de Tensão!](https://github.com/jsleocadio/Digital-Systems/blob/main/Project%2002/images/Imagem%2002.png)
 
 **Adicionalmente:** Para simular uma chave de ignição adicionei um potenciômetro de 1 G $\Omega$ conforme imagem complementar abaixo:
 
-![Potenciômetro servindo como chave de ignição!](/images/Imagem%2003.png)
+![Potenciômetro servindo como chave de ignição!](https://github.com/jsleocadio/Digital-Systems/blob/main/Project%2002/images/Imagem%2003.png)
 
 Utilizei 2 potenciômetros de 10 k $\Omega$ para servir como medidores de velocidade e combustível. Montados da seguinte forma:
 
-![Montagem Entradas Analógicas!](/images/Imagem%2004.png)
+![Montagem Entradas Analógicas!](https://github.com/jsleocadio/Digital-Systems/blob/main/Project%2002/images/Imagem%2004.png)
 
 Conforme solicitado as entradas analógicas foram configuradas da seguinte forma:
 
@@ -101,7 +101,7 @@ Conforme solicitado as entradas analógicas foram configuradas da seguinte forma
 
 As entradas digitais serão utilizadas para monitorar os botões que serão usados, respectivamente, para ligar o pisca direito, o pisca esquerdo, os faróis e o limpador. A montagem foi feita conforme projeto:
 
-![Ligação dos botões!](/images/Imagem%2005.png)
+![Ligação dos botões!](https://github.com/jsleocadio/Digital-Systems/blob/main/Project%2002/images/Imagem%2005.png)
 
 **Lembrando que resitores de 10k $\Omega$ são utilizado na ligação dos botões.
 
@@ -118,7 +118,7 @@ Segue tabela de ligações:
 
 As saídas digitais serão utilizadas para ligar, respectivamente, pisca direita, pisca esquerda, injeção eletrônica e faróis. A montagem foi executada da seguinte forma:
 
-![Montagem entradas e saídas digitais!](/images/Imagem%2006.png)
+![Montagem entradas e saídas digitais!](https://github.com/jsleocadio/Digital-Systems/blob/main/Project%2002/images/Imagem%2006.png)
 
 **Lembrando que para utilizar a tensão correta na ligação dos LEDs é necessário utilizar resistores de 220 $\Omega$.
 
@@ -135,13 +135,13 @@ As conexões foram feitas da seguinte forma:
 
 Precisamos usar um PWM (Pulse Width Modulation) para controlar o servo motor, pois, segundo o datasheet do SG90 precisa de um pulso específico.
 
-![Datasheet do SG90!](/images/Imagem%2007.png)
+![Datasheet do SG90!](https://github.com/jsleocadio/Digital-Systems/blob/main/Project%2002/images/Imagem%2007.png)
 
 Como visto na imagem acima, precisamos de um pulso de 50 Hz com um duty cicle de 1 à 2 ms. Falarei mais sobre isso na parte de *coding*.
 
 A montagem foi feito da seguinte forma:
 
-![Ligação saída analógica!](/images/Imagem%2008.png)
+![Ligação saída analógica!](https://github.com/jsleocadio/Digital-Systems/blob/main/Project%2002/images/Imagem%2008.png)
 
 Fazendo com que a porta PB1 seja a saída que regulará a rotação do limpador de para-brisa.
 
@@ -149,7 +149,7 @@ Fazendo com que a porta PB1 seja a saída que regulará a rotação do limpador 
 
 Conforme a imagem abaixo, a montagem foi realizada conforme projeto:
 
-![Montagem final do projeto!](/images/Imagem%2009.png)
+![Montagem final do projeto!](https://github.com/jsleocadio/Digital-Systems/blob/main/Project%2002/images/Imagem%2009.png)
 
 A montagem ocorreu sem grandes dificuldades. Agora iremos para o *coding*.
 
@@ -523,4 +523,4 @@ Houve uma tentativa de realizar a codificando usando explicitamente C/AVR, poré
 
 Há algumas falhas como encontrar o timing correto para acionar os botões visto que existe apenas um momento muito curto para acioná-los.
 
-No mais tudo funcionando conforme solicitado no projeto.S
+No mais tudo funcionando conforme solicitado no projeto.
