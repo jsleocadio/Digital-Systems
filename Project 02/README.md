@@ -361,8 +361,8 @@ O cálculo é feito da seguinte forma:
 $$TOP = \frac{\omega_{clk}}{N*\omega_{desired}} - 1,$$
 
 onde: 
-* $\omega_{clk} \rightarrow $ frequência do ATMega (16 MHz);
-* $N \rightarrow $ Valor do *pre-scale*;
+* $\omega_{clk} \rightarrow$ frequência do ATMega (16 MHz);
+* $N \rightarrow$ Valor do *pre-scale*;
 * $\omega_{desired} \rightarrow$ Valor da frequência desejada, nosso caso 50 Hz.
 
 Dito isto, inicializamos nosso PWM da seguinte forma:
