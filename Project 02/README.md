@@ -458,7 +458,7 @@ Em nosso `void loop()` iniciamos nos certificando que todas os pinos estão em n
 |Estado|Tensão|Valor em `ignitionState`|
 |---|---|---|
 |$0$|$0.00 V$|$x < 341$|
-|$1$|$1.67 V$|$341 \geq x > 682$|
+|$1$|$1.67 V$|$341 \leq x < 682$|
 |$2$|$3.33 V$|$682$|
 
 Estes valores em `ignitionState` será atualizado pela função `getVoltage()`. Após isto, verificamos se algum botão foi pressionado. E em seguida verificamos em qual estado está e o que é permitido que ele faça.
